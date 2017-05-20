@@ -1,2 +1,4 @@
-<a ng-href="#!/" class="btn btn-default">Home</a>
-people
+<div class="jumbotron" ng-repeat="person in model.results">
+   <a ng-init="id = getId(person)" ng-href="#!/person/{{id}}">{{person.name}}</a>
+
+</div>
